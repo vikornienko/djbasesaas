@@ -1,0 +1,21 @@
+[project]
+name = "djbasesaas"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=6.1.2",
+    "django-environ>=0.14.0",
+]
+
+[dependency-groups]
+dev = [
+    "django-debug-toolbar>=8.0.0",
+    "django-stubs>=6.1.2",
+    "django-stubs-ext>=6.1.2",
+    "mypy>=2.4.1",
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "pytest-cov>=7.1.0",
+    "pytest-django>=4.14.0",
+    "ruff>=0.17.3",
+]
