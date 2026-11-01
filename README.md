@@ -8,11 +8,12 @@ This project uses uv for dependency management.
 
 ## Configure the Git repository
 
+```bash
 git init --initial-branch=main --object-format=sha1
 uv run pre-commit install
 git add .
 git commit -m "Initial commit"
-
+```
 
 ## Commands from Makefile
 
@@ -33,4 +34,4 @@ The project incorporates:
 - ruff linter and formatter;  
 - pre-commit hooks;  
 - makefile for command automation;  
-- tailwindCSS; 
+- tailwindCSS;
