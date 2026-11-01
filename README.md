@@ -21,3 +21,16 @@ git commit -m "Initial commit"
 - `make mig` - Apply migrations
 - `make csu` - Create superuser
 - `make sa` - Start new app
+
+## Description
+
+This project is coding to use video tutorial [Python Tutorial: Build a SaaS App with Djanto, Stripe, Neon PostgreSQL, TailwindCSS, GitHub Actions](https://www.youtube.com/watch?v=WbNNESIxJnY&list=PLHhkxhfqZ1OSvd9aqWBUP_T7HVG5jWT-w&index=93&t=900s)
+
+The project incorporates:  
+
+- uv package manager;  
+- mypy type checking;  
+- ruff linter and formatter;  
+- pre-commit hooks;  
+- makefile for command automation;  
+- tailwindCSS; 
