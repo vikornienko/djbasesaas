@@ -15,7 +15,8 @@ csu:
 	uv run djbasesaas/manage.py createsuperuser
 
 sa:
-	@echo -n "Enter app name: "; read app_name; uv run djbasesaas/manage.py startapp 19722app_name
+	@test -n "$(app)" || { echo "Usage: make sa app=app_name" >&2; exit 1; }
+	uv run --directory djbasesaas manage.py startapp "$(app)"
 
 rc:
 	uv run ruff check .
